@@ -1,0 +1,133 @@
+/*
+Author: Aswathi SA
+Date: 07/01/2023
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+p {
+	line-height: 30px;
+	text-align: center;
+	color: #252525;
+}
+h1 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+}
+.banner {
+	background-image: url(../images/academy-banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+.second {
+	height: fit-content;
+}
+h3::before {
+	content: "{";
+	color: #f00;
+}
+h3::after {
+	content: "}";
+	color: #f00;
+}
+.size {
+	width: 50%;
+}
+.img1 {
+	width: 100%;
+}
+.about_course {
+	position: relative;
+	margin-left: 5%;
+}
+.courses {
+	background-color: #1e2531;
+	height: fit-content;
+	width: fit-content;
+	font-size: 25px;
+	color: #5b8fb9;
+	position: absolute;
+	top: 25%;
+	left: 35%;
+}
+.php_courses {
+	background-image: url(../images/modulebg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+.php_mysql > div {
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	padding: 10px 30px;
+	margin-top: 15%;
+	text-align: center;
+	border-radius: 10px;
+
+	font-size: 20px;
+}
+/*third closed*/
+
+.style {
+	width: 70%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.image1 {
+	background-image: url(../images/testsbg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	height: auto;
+}
+.image2 {
+	background-image: url(../images/intrvwbg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	height: auto;
+}
+.design {
+	background-color: rgba(6, 8, 11, 0.7);
+
+	width: 90%;
+	min-height: 500px;
+}
+.design > p {
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	padding: 100px;
+}
+/*completed*/
+@media screen and (max-width: 576px) {
+	* {
+		box-sizing: border-box;
+	}
+	.banner {
+		background-image: none;
+		background-color: #ccc;
+	}
+	.blank {
+		display: none;
+	}
+	.courses {
+		position: static;
+		margin-top: 20px;
+	}
+	.size {
+		width: 100%;
+	}
+	.about_course {
+		margin-left: 0;
+	}
+	.php_courses {
+		height: fit-content;
+	}
+}
